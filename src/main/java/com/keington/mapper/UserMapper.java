@@ -12,6 +12,7 @@ public interface UserMapper {
 
     List<UserDao> UserList();
     UserDao UserById(int id);
+    int UserList(UserDao user);
     int addUser(UserDao user);
     int updateUser(UserDao user);
     int deleteUser(int id);

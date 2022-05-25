@@ -33,3 +33,8 @@ spring:
         stat:
           merge-sql: true
           slow-sql-millis: 5000
+
+# Mybatis Config
+mybatis-plus:
+  type-aliases-package: com.keington.dao.UserDao
+  mapper-locations: classpath:mybatis/mapper/*.xml

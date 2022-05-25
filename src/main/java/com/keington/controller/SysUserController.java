@@ -27,6 +27,7 @@ public class SysUserController {
     // 用户列表
     @GetMapping("/list")
     public List<UserDao> UserList(){
+        usermapper.UserList(new UserDao(5));
         return usermapper.UserList();
     }
 
